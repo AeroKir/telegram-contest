@@ -1,0 +1,252 @@
+/* css reset */
+/* Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Reset margins and paddings on most elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select,
+button {
+  color: inherit; 
+  font: inherit; 
+  letter-spacing: inherit; 
+}
+
+input,
+textarea,
+button {
+  border: 1px solid gray; 
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Verdana, Arial sans-serif;
+  font-size: 14px;
+}
+
+/* Wrapper */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.chart-heading {
+  padding: 0.5em 0.5em;
+  font-size: 1.5em;
+  color: #222222;
+}
+
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* Mode switch */
+.mode-switch-section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 auto;
+}
+
+.button-switch-mode {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-bottom: 2em;
+  padding: 0.5em 0.5em;
+  font-size: 1.7em;
+  color: #108be3;
+}
+
+/* Chart */
+.main-chart-area {
+  padding-left: 10px;
+}
+
+.graph {
+  /* width: 100vw;
+  height: 70vh; */
+  border: 1px solid red;
+}
+
+
+.sub-graph {
+  border: 1px solid gray;
+}
+
+.sub-chart-section {
+  margin-bottom: 1em;
+}
+
+/* Chart switchers */
+.chart-switch-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+}
+
+.checkbox-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1em;
+  padding: 0.7em 1.5em 0.7em 0.7em;
+  border: 0.13em solid #e7ecf0;
+  border-radius: 50px;
+}
+
+/* Check */
+.check-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5em;
+  font-size: 1.5em;
+  color: #43484b;
+}
+
+.checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* .check-box {
+  position: absolute;
+  margin-left: -3.5em;
+  width: 3em;
+  height: 3em;
+  background-image: url(./images/check-joined-off.svg);
+} */
+
+.check-box {
+  position: absolute;
+  margin-left: -1.5em;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+}
+
+.check-box-joined {
+  -webkit-box-shadow: 0 0 0 0.15em #3DC23F;
+          box-shadow: 0 0 0 0.15em #3DC23F;
+}
+
+.check-box-left {
+  -webkit-box-shadow: 0 0 0 0.15em #F34C44;
+          box-shadow: 0 0 0 0.15em #F34C44;
+}
+
+/* Checked */
+.checkbox-input:checked + .check-box {
+  background-image: url(./images/check-mark.svg);
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.checkbox-input:checked + .check-box-joined {
+  background-color: #3DC23F;
+}
+
+.checkbox-input:checked + .check-box-left {
+  background-color: #F34C44;
+}
+
+/* Focused */
+/* .checkbox-input:focus + .check-box-joined {
+  -webkit-box-shadow:
+    0 0 0 0.15em #3DC23F,
+    0 0 0 0.25em #3DC23F;
+          box-shadow:
+    0 0 0 0.15em #3DC23F,
+    0 0 0 0.25em #3DC23F;
+}
+
+.checkbox-input:focus + .check-box-left {
+  -webkit-box-shadow:
+    0 0 0 0.15em #F34C44,
+    0 0 0 0.25em #2B0000;
+          box-shadow:
+    0 0 0 0.15em #F34C44,
+    0 0 0 0.25em #2B0000;
+} */
+
+
+.grid {
+  /* height: 100%; */
+  stroke: gray;
+  stroke-width: 0.02em;
+}
+
+/* .point-joined {
+  opacity: 0;
+}
+
+.point-joined:hover {
+  opacity: 1;
+  stroke-width: 0.5em;
+} */
+
+.line {
+  height: 100%;
+}
+
+/* Modes */
+.day-mode {
+  background-color: #ffffff;
+}
+
+.night-mode {
+  background-color: #242f3e;
+  color: #ffffff;
+}
